@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -12,27 +13,24 @@ export default function Home() {
           Simple no code tools to update NFT metadata file with ease
         </p>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-          <button
-            id="button-1"
-            onclick="window.location.href='create-pre-reveal-json.html'"
+          <Link
+            href="/create-pre-reveal-json"
             class=" px-4 py-3  text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-bold rounded-lg text-sm  text-center mr-2 mb-2"
           >
             Create Pre-Reavel json
-          </button>
-          <button
-            id="button-2"
-            onclick="window.location.href='update-metadata.html'"
+          </Link>
+          <Link
+            href="/update-file"
             class=" px-4 py-3  text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-bold rounded-lg text-sm  text-center mr-2 mb-2"
           >
             Update NFT Metadata
-          </button>
-          <button
-            id="button-3"
-            onclick="window.location.href='edit-extenstion.html'"
+          </Link>
+          <Link
+            href="/edit-extenstion"
             class=" px-4 py-3  text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-bold rounded-lg text-sm  text-center mr-2 mb-2"
           >
             Add/Remove extenstion
-          </button>
+          </Link>
         </div>
       </div>
     </main>

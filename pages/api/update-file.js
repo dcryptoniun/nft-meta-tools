@@ -97,7 +97,10 @@ import path from "path";
 
 export default function handler(req, res) {
   try {
-    const dirPath = path.join(process.env.HOME, "Desktop", "metadata");
+    const os = require("os");
+    const path = require("path");
+    const dirPath = path.join(os.homedir(), "Desktop/metadata");
+    // const dirPath = path.join(process.cwd(), "data");
     const files = fs.readdirSync(dirPath);
 
     files.forEach((file) => {

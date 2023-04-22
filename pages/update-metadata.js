@@ -87,3 +87,11 @@
 // };
 
 // export default UpdateMetadata;
+import React from 'react'
+
+
+export default function updatemetadata() {
+  return (
+    <div>update-metadata</div>
+  )
+}

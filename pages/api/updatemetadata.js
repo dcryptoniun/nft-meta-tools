@@ -22,3 +22,10 @@
 
 //   res.status(200).end();
 // }
+import React from "react";
+
+function updatemetadata() {
+  return <div>updatemetadata</div>;
+}
+
+export default updatemetadata;
